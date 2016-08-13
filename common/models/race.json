@@ -1,0 +1,62 @@
+{
+  "name": "Race",
+  "plural": "Races",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "start_registration": {
+      "type": "date"
+    },
+    "end_registration": {
+      "type": "date"
+    },
+    "start_point": {
+      "type": "string"
+    },
+    "end_point": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "information": {
+      "type": "string"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "valid": {
+      "type": "boolean"
+    },
+    "fees": {
+      "type": [
+        "Fee"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "club": {
+      "type": "belongsTo",
+      "model": "Club",
+      "foreignKey": "clubId"
+    },
+    "participants": {
+      "type": "hasMany",
+      "model": "Participant",
+      "foreignKey": "raceId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

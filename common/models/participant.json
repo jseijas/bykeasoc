@@ -1,0 +1,46 @@
+{
+  "name": "Participant",
+  "plural": "Participants",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "subscribed_on": {
+      "type": "date"
+    },
+    "category": {
+      "type": "string"
+    },
+    "fee_id": {
+      "type": "string"
+    },
+    "licence": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "valid": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "race": {
+      "type": "belongsTo",
+      "model": "Race",
+      "foreignKey": "raceId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Club",
+  "plural": "Clubs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "webpage": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "races": {
+      "type": "hasMany",
+      "model": "Race",
+      "foreignKey": "clubId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

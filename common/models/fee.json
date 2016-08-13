@@ -1,0 +1,29 @@
+{
+  "name": "Fee",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "category": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "string"
+    },
+    "preregister": {
+      "type": "boolean"
+    },
+    "prepaid": {
+      "type": "boolean"
+    },
+    "fee": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
