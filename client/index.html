@@ -1,8 +1,35 @@
-<html>
+<!doctype html>
+<html lang="en" class="no-js" ng-app="bykeasoc">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Byke Asoc</title>
+	
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles/app-blue.css" />
+	
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="libs/angular-resource/angular-resource.min.js"></script>
+
+	<script src="scripts/services/lb-services.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/directives/pageheader/pageheader.js"></script>
+	<script src="scripts/directives/sidenav/sidenav.js"></script>
+	<script src="scripts/directives/sidenav/menu/menu.js"></script>
+	<script src="scripts/directives/topnav/topnav.js"></script>
+	<script src="scripts/directives/footer/footer.js"></script>
+	<script src="scripts/services/auth-srv.js"></script>
+	<script src="scripts/controllers/main-ctrl.js"></script>
+	<script src="scripts/controllers/club-ctrl.js"></script>
+	
 </head>
 <body>
-	OLA K ASE
+	<div ui-view></div>
 </body>
 </html>
 	
