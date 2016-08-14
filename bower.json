@@ -1,0 +1,12 @@
+{
+  "name": "bykeasoc",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "ui-router#^0.3.1",
+    "angular-bootstrap": "^2.0.1",
+    "angular-resource": "^1.5.8",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

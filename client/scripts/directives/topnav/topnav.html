@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse navbar-fixed-top striped-bg" id="top-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">       
+            <a class="sidenav-toggle" href="javascript:;"ng-click="showMenu();" ><span class="brandbar"><i class="fa fa-bars hidd"></i></a></span>
+            <a class="navbar-brand" ui-sref="home"><i class="fa fa-bar-chart-o"></i>&nbsp;{{ appName }}</a>            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right top-nav">
+                <li class="dropdown" uib-dropdown>
+                    <a href class="dropdown-toggle admin-toggle" uib-dropdown-toggle>
+                        <img class="img-circle admin-img" src="images/user2.png" alt="">&nbsp;&nbsp;&nbsp;<span class="add">{{ userName }}&nbsp;
+                        <i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu admin" uib-dropdown-menu role="menu">
+                        <li role="presentation" class="dropdown-header">{{ userName }}</li>
+                        <li ng-show="isAdmin"><a ui-sref="clubs"><i class="fa fa-cube"></i> Clubs</a></li>
+                    </ul>             
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
